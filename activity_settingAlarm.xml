@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.alisonwang.myapplication3.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/textView" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary" >
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Gym"
+        android:ems="10"
+        android:layout_marginTop="36dp"
+        android:id="@+id/editText2"
+        android:height="15dp"  android:textSize="15sp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <Switch
+        android:text="Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"
+        android:height="66dp"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/editText2"
+        android:checked="true" />
+
+
+    <Switch
+        android:text="Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch2"
+        android:height="66dp"
+        android:layout_alignTop="@+id/editText3"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_alignBottom="@+id/editText3"
+        android:checked="false" />
+
+
+    <TextView
+            android:id="@+id/output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:text="Repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblTime"
+        android:layout_alignLeft="@+id/lblTime"
+        android:layout_alignStart="@+id/lblTime"
+        android:layout_marginTop="11dp"
+        android:id="@+id/checkBox" />
+
+
+    <CheckBox android:id="@+id/checkbox_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="School"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:height="15dp"  android:textSize="15sp"
+        android:layout_below="@+id/checkbox_s"
+        android:layout_alignLeft="@+id/checkbox_s"
+        android:layout_alignStart="@+id/checkbox_s"
+        android:layout_marginTop="36dp" />
+
+    <CheckBox android:id="@+id/checkbox_sat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sat"
+        android:layout_alignBaseline="@+id/checkbox_th"
+        android:layout_alignBottom="@+id/checkbox_th"
+        android:layout_alignRight="@+id/switch2"
+        android:layout_alignEnd="@+id/switch2" />
+
+    <CheckBox android:id="@+id/checkbox_th"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Th"
+        android:layout_alignBaseline="@+id/checkbox_we"
+        android:layout_alignBottom="@+id/checkbox_we"
+        android:layout_toLeftOf="@+id/checkbox_sat"
+        android:layout_toStartOf="@+id/checkbox_sat" />
+
+    <CheckBox android:id="@+id/checkbox_we"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W"
+        android:layout_above="@+id/editText3"
+        android:layout_toRightOf="@+id/editText3"
+        android:layout_toEndOf="@+id/editText3" />
+
+    <CheckBox android:id="@+id/checkbox_tu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu"
+        android:layout_above="@+id/editText3"
+        android:layout_toLeftOf="@+id/checkbox_we"
+        android:layout_toStartOf="@+id/checkbox_we"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <CheckBox android:id="@+id/checkbox_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M"
+        android:layout_above="@+id/editText3"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Set Alarm"
+        android:ems="10"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:id="@+id/editText"
+        android:textStyle="bold"
+        android:layout_above="@+id/editText2"
+        android:layout_toRightOf="@+id/output"
+        android:layout_toEndOf="@+id/output" />
+
+    <TextClock
+        android:id="@+id/lblTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="14dp"
+        android:format12Hour ="hh:mm:ss a"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+
+</RelativeLayout>
