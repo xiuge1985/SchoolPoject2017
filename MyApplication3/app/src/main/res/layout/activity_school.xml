@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:layout_marginBottom="80dp"
+    tools:context="com.example.alisonwang.myapplication3.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/textView" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary" >
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#00000000"
+        android:textColor="#274aee"
+        android:id="@+id/button" />
+
+    <TextView
+        android:text="Essential Items"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="•driver's license"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:text="•keys"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:text="School"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:text="•wallets"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:id="@+id/checkBox2" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2"
+        android:id="@+id/checkBox3" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:id="@+id/checkBox"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="•laptop"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:text="•textbooks"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:id="@+id/textView8" />
+
+    <TextView
+        android:text="•notbooks"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:id="@+id/textView9" />
+
+    <TextView
+        android:text="•pencil"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_above="@+id/textView8"
+        android:layout_alignLeft="@+id/checkBox3"
+        android:layout_alignStart="@+id/checkBox3"
+        android:id="@+id/checkBox4" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:id="@+id/checkBox5"
+        android:layout_alignLeft="@+id/checkBox4"
+        android:layout_alignStart="@+id/checkBox4"
+        android:layout_alignBottom="@+id/textView8" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:id="@+id/checkBox6"
+        android:layout_alignLeft="@+id/checkBox5"
+        android:layout_alignStart="@+id/checkBox5"
+        android:layout_alignBottom="@+id/textView9" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:id="@+id/checkBox8"
+        android:layout_alignLeft="@+id/checkBox6"
+        android:layout_alignStart="@+id/checkBox6"
+        android:layout_alignBottom="@+id/textView10" />
+
+    <TextView
+        android:text="•water bottle"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:id="@+id/textView11" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:id="@+id/checkBox9"
+        android:layout_alignLeft="@+id/checkBox8"
+        android:layout_alignStart="@+id/checkBox8"
+        android:layout_alignBottom="@+id/textView11" />
+
+    <TextView
+        android:text="•glasses"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:text="•eraser"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:text="•folder"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView13"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:id="@+id/checkBox10"
+        android:layout_alignLeft="@+id/checkBox9"
+        android:layout_alignStart="@+id/checkBox9"
+        android:layout_alignBottom="@+id/textView12" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:id="@+id/checkBox11"
+        android:layout_alignLeft="@+id/checkBox10"
+        android:layout_alignStart="@+id/checkBox10"
+        android:layout_alignBottom="@+id/textView13" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:id="@+id/checkBox12"
+        android:layout_alignLeft="@+id/checkBox11"
+        android:layout_alignStart="@+id/checkBox11"
+        android:layout_alignBottom="@+id/textView14" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="40"
+        android:hint="    Add more itmes..."
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+
+</RelativeLayout>
